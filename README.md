@@ -1,7 +1,4 @@
-## VBCourtMaster.js
-
-### Hosted @ https://vb-courtmaster.onrender.com
-
+## VBCourtMaster.js | https://vb-courtmaster.onrender.com
 ---
 
 ### About The Project
