@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>VBCourtMaster</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+
+    <!------- Loading JS scripts ------->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer type="text/javascript" src='src/vb-court-master.js'></script>
+    <script defer type="text/javascript" src='index.js'></script>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <h2 class="siteTitle">VBCourtMaster</h2>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Examples</a></li>
+                <li><a href="docs/VBCourtMasterDocs.html" >Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="libdescription">
+        <h3>Create fundamental and interactive volleyball court representations with this simple Javascript library</h3>
+    </div>
+    <div class="divBody">
+        <h3>Examples</h3>
+        <h4>Most basic court representation</h4>
+        <h5>Display only the court and 6 players with their information </h5>
+        <div class="parent-flex">
+            <div class="in-line-child" id='example1'></div>
+            <div class="in-line-child tabs">
+                <div class="tabs__head">
+                    <span class="tabs__toggle is-active">HTML</span>
+                    <span class="tabs__toggle">CSS</span>
+                    <span class="tabs__toggle">JS</span>
+                </div>
+                <div class="tabs__body">
+                    <div class="tabs__content is-active">
+                        <pre>
+                            <code>
+&ltdiv class="in-line-child" id='example1'&gt&lt/div&gt
+                            </code>
+                        </pre>
+
+                    </div>
+                    <div class="tabs__content">
+                        <p>None</p>
+                    </div>
+                    <div class="tabs__content">
+                        <pre>
+                            <code>
+const firstExample = document.getElementById('example1')
+const court1 = new CourtGenerator(firstExample)
+court1.createCourt()
+
+court1.addPlayer(1, "OPP", "Yuji Nishida", "Opposite Hitter", "6'1")
+court1.addPlayer(2, "P2", "Ran Takahashi", "Left side Hitter", "6'2")
+court1.addPlayer(3, "M1", "Haku Lee", "Middle Blocker", "6'3")
+court1.addPlayer(4, "S", "Masahiro Sekita", "Setter", "5'9")
+court1.addPlayer(5, "P1", "Yuki Ishikawa", "Left side Hitter", "6'3")
+court1.addPlayer(6, "M2", "Akihiro Yamauchi", "Middle BLocker", "6'8")
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h4>Court representation with sketching feature</h4>
+        <h5>Display only the court, 6 players with their information and allow users to draw on the court</h5>
+        <div class="parent-flex">
+            <div class="in-line-child" id='example2'></div>
+            <div class="in-line-child tabs">
+                <div class="tabs__head">
+                    <span class="tabs__toggle is-active">HTML</span>
+                    <span class="tabs__toggle">CSS</span>
+                    <span class="tabs__toggle">JS</span>
+                </div>
+                <div class="tabs__body">
+                    <div class="tabs__content is-active">
+                        <pre>
+                            <code>
+&ltdiv class="in-line-child" id='example2'&gt&lt/div&gt
+                            </code>
+                        </pre>
+
+                    </div>
+                    <div class="tabs__content">
+                        <p>None</p>
+                    </div>
+                    <div class="tabs__content">
+                        <pre>
+                            <code>
+const secondExample = document.getElementById('example2')
+const court2 = new CourtGenerator(secondExample)
+court2.createCourt(false, false, true, 'court5', 1)
+
+court2.addPlayer(1, "OPP", "Yuji Nishida", "Opposite Hitter", "6'1")
+court2.addPlayer(2, "P2", "Ran Takahashi", "Left side Hitter", "6'2")
+court2.addPlayer(3, "M1", "Haku Lee", "Middle Blocker", "6'3")
+court2.addPlayer(4, "S", "Masahiro Sekita", "Setter", "5'9")
+court2.addPlayer(5, "P1", "Yuki Ishikawa", "Left side Hitter", "6'3")
+court2.addPlayer(6, "M2", "Akihiro Yamauchi", "Middle BLocker", "6'8")
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <h4>Court representation with score keeping feature</h4>
+        <h5>Display the court, 6 players with their information and allow users to keep track of score</h5>
+        <div class="parent-flex">
+            <div class="in-line-child" id='example3'></div>
+            <div class="in-line-child tabs">
+                <div class="tabs__head">
+                    <span class="tabs__toggle is-active">HTML</span>
+                    <span class="tabs__toggle">CSS</span>
+                    <span class="tabs__toggle">JS</span>
+                </div>
+                <div class="tabs__body">
+                    <div class="tabs__content is-active">
+                        <pre>
+                            <code>
+&ltdiv class="in-line-child" id='example3'&gt&lt/div&gt
+                            </code>
+                        </pre>
+
+                    </div>
+                    <div class="tabs__content">
+                        <p>None</p>
+                    </div>
+                    <div class="tabs__content">
+                        <pre>
+                            <code>
+const thirdExample = document.getElementById('example3')
+const court3 = new CourtGenerator(thirdExample)
+court3.createCourt(false, true, false, "court6", 1)
+
+court3.addPlayer(1, "OPP", "Daichi Sawamura", "Opposite Hitter", "5'10")
+court3.addPlayer(2, "P2", "Ryunosuke Tanaka", "Left side Hitter", "5'9")
+court3.addPlayer(3, "M1", "Tsukishima Kei", "Middle Blocker", "6'3")
+court3.addPlayer(4, "S", "Tobio Kageyama", "Setter", "6'1")
+court3.addPlayer(5, "P1", "Asahi Azumane", "Left side Hitter", "6'2")
+court3.addPlayer(6, "M2", "Shoyo Hinata", "Middle BLocker", "5'6")
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Court representation with all features</h4>
+        <h5>Display an interactive court with 6 players and their information, allow scorekeeping and sketching </h5>
+        <div class="parent-flex">
+            <div class="in-line-child" id='example4'></div>
+            <div class="in-line-child tabs">
+                <div class="tabs__head">
+                    <span class="tabs__toggle is-active">HTML</span>
+                    <span class="tabs__toggle">CSS</span>
+                    <span class="tabs__toggle">JS</span>
+                </div>
+                <div class="tabs__body">
+                    <div class="tabs__content is-active">
+                        <pre>
+                            <code>
+&ltdiv class="in-line-child" id='example4'&gt&lt/div&gt
+                            </code>
+                        </pre>
+
+                    </div>
+                    <div class="tabs__content">
+                        <p>None</p>
+                    </div>
+                    <div class="tabs__content">
+                        <pre>
+                            <code>
+const fourthExample = document.getElementById('example4')
+const court4 = new CourtGenerator(fourthExample)
+court4.createCourt(true, true, true, "court7", 1) 
+
+court4.addPlayer(1, "S", "Micah Christenson", "Setter", "6'6 tall")
+court4.addPlayer(2, "P1", "Taylor Sander", "Left side Hitter", "6'4 tall")
+court4.addPlayer(3, "M2", "Mitch Stahl", "Middle Blocker", "6'9 tall")
+court4.addPlayer(4, "OPP", "Matt Anderson", "Opposite Hitter", "6'10 tall")
+court4.addPlayer(5, "P2", "TJ Defalco", "Left side Hitter", "6'5 tall")
+court4.addPlayer(6, "M1", "Max Holt", "Middle Blocker", "6'11 tall")
+
+court4.clickRotate.onclick = function() {
+    court4.rotateOnce()
+    setTimeout(() => {court4.resetTransition()}, 500)
+}
+court4.clickReset.onclick = function() {
+    court4.resetToCurrent()
+    setTimeout(() => {court4.resetTransition()}, 500)
+}
+court4.makeDraggable()
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+    </div>
+    </div>
+</body>
+
+</html>

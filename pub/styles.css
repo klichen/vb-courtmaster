@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.siteTitle {
+    font-family: "Teko";
+    font-weight: 600;
+    font-size: 95px;
+    color: #0088a9;
+    text-decoration: none;
+}
+
+/*
+li, a {
+    font-family: "Teko";
+    font-weight: 500;
+    font-size: 35px;
+    color: #172f7f;
+    text-decoration: none;
+}
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+}
+
+.navbar {
+    background-color: #ffe500;
+    
+}
+
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-family: "Teko";
+    font-weight: 500;
+    font-size: 35px;
+    color: #172f7f;
+    text-decoration: none;
+}
+
+.nav_links li a {
+    transition: all 0.3 ease 0s;
+    font-family: "Teko";
+    font-weight: 500;
+    font-size: 35px;
+    color: #172f7f;
+    text-decoration: none;
+}
+
+.nav_links li a:hover {
+    text-decoration: none;
+    transition: all 0.3 ease 0s;
+    color: #0088a9
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.divBody {
+    padding: 5px 5%;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    
+}
+
+.divBody h3 {
+    font-family: "Teko";
+    font-weight: 500;
+    font-size: 45px;
+    color: #172f7f;
+    text-decoration: none;
+}
+
+.divBody h4 {
+    margin-top: 35px;
+    font-family: "Teko";
+    font-weight: 400;
+    font-size: 35px;
+    color: #0088a9;
+    text-decoration: none;
+}
+
+
+.divBody h5 {
+    font-family: "Teko";
+    font-weight: 300;
+    font-size: 30px;
+    color: #070b1a;
+    text-decoration: none;
+}
+
+
+.parent-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.in-line-child {
+    display: inline-block;
+}
+
+
+.tabs {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #f2f2f2;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+}
+
+.tabs__head {
+    display: flex;
+    align-items: stretch;
+}
+
+.tabs__toggle {
+    display: flex;
+    width: 33.3334%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    cursor: pointer;
+}
+
+.tabs__toggle.is-active {
+    background: #f2f2f2;
+}
+
+.tabs__content {
+    padding: 30px;
+    display: none;
+}
+
+.tabs__content.is-active {
+    display: block;
+}
+
+.libdescription {
+    text-align: center;
+}
+
+.libdescription h3 {
+    margin-top: 35px;
+    font-family: "Teko";
+    font-weight: 400;
+    font-size: 35px;
+    color: #0088a9;
+    text-decoration: none;
+}
+
+.starting {
+    padding: 20px;
+}
+
+.starting li{
+    font-size: 17px;
+}
