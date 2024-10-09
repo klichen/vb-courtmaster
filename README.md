@@ -1,11 +1,22 @@
-# js-library-lichenke
+## VBCourtMaster.js
 
-### Landing page: https://boiling-headland-10067.herokuapp.com/
-### Documentation: https://boiling-headland-10067.herokuapp.com/docs/VBCourtMasterDocs.html 
+#### Hosted @ https://vb-courtmaster.onrender.com
 
 ---
 
-### Getting started
+#### About The Project
+
+[![VBCourtMaster screenshot][main-screenshot]](https://vb-courtmaster.onrender.com)
+
+**VBCourtMaster.js** is a Javascript library that allows developers to represent player positions of one team in a volleyball court, it also allows them to display animations of player rotations along with other
+volleyball related functionality.
+
+This library could be used by developers in many different ways such as a volleyball educational web app, a volleyball organization web app which helps coaches present information to their teams in a clearer manner, a web app that tracks live volleyball matches and displays information about team rosters and line-ups, among many others.
+
+
+---
+
+#### Getting started (Developers)
 
 - Start by including the jQuery script in your website
 ```html
@@ -34,3 +45,6 @@ court1.addPlayer(6, "M2", "Akihiro Yamauchi", "Middle BLocker", "6'8")
 ```
 
 
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[main-screenshot]: images/landing-screenshot.png
