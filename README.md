@@ -1,10 +1,10 @@
 ## VBCourtMaster.js
 
-#### Hosted @ https://vb-courtmaster.onrender.com
+### Hosted @ https://vb-courtmaster.onrender.com
 
 ---
 
-#### About The Project
+### About The Project
 
 [![VBCourtMaster screenshot][main-screenshot]](https://vb-courtmaster.onrender.com)
 
@@ -16,7 +16,7 @@ This library could be used by developers in many different ways such as a volley
 
 ---
 
-#### Getting started (Developers)
+### Getting started (Developers)
 
 - Start by including the jQuery script in your website
 ```html
